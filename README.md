@@ -18,3 +18,10 @@ Research how to create a multi machine vagrant environment
 
 
 	cd test rake spec
+	# multimachine notation
+	- use machine.[etc] for each separate vm
+	general config is same however need to do all .box, .network etc separetly for the separate vms
+	- have 2 seperate provision files
+	- to access a vm use command:
+	- vagrant ssh [vm]
+	 

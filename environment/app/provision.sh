@@ -21,4 +21,4 @@ sudo apt-get install nodejs -y
 sudo npm install pm2 -g
 cd /home/ubuntu/app
 sudo npm Install
-sudo npm start
+sudo npm start & 

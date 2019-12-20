@@ -24,3 +24,11 @@ Research how to create a multi machine vagrant environment
 	- have 2 seperate provision files
 	- to access a vm use command:
 	- vagrant ssh [vm]
+# to link db to app use these commands:
+##inside the ubuntu terminal (app)
+export DB_HOST (the db_host variable in app.ja for the mongoose.connect method)
+set it to the url, where ip, db port + db of the app -->
+export DB_HOST=mongodb://192.168.10.150:27017/posts
+if npm install did not install the posts db use command:
+	node seeds/seed.js
+	check the app page at 3000/posts to see the db

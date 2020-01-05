@@ -32,3 +32,5 @@ export DB_HOST=mongodb://192.168.10.150:27017/posts
 if npm install did not install the posts db use command:
 	node seeds/seed.js
 	check the app page at 3000/posts to see the db
+
+ansible all -i db,app -e ansible_network_os=ubuntu/xenial64
